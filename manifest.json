@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "wallcleaner",
-    "description": "Tool for removing posts on fb wall",
+    "description": "Extension that filters your Facebook wall",
     "version": "1",
     "author": "Kamil Podlasek",
     "permissions": ["tabs", "storage"],
