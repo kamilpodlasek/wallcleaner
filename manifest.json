@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+    "name": "wallcleaner",
+    "description": "Tool for removing posts on fb wall",
+    "version": "1",
+    "author": "Kamil Podlasek",
+    "permissions": ["tabs", "storage"],
+    "content_scripts": [
+        {
+            "matches": ["*://web.facebook.com/*"],
+            "js": ["content.js"],
+            "run_at": "document_end"
+        }
+    ],
+    "browser_action": {
+        "default_popup": "popup.html",
+        "default_title": "wallcleaner"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    }
+}
